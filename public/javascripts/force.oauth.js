@@ -34,7 +34,7 @@ var force = (function () {
         baseURL = location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '') + context,
 
     // Added callbackUrl to account for changes
-        callbackUrl = '/oauthcallback',
+        callbackUrl = 'oauth/_callback',
 
     // if page URL is http://localhost:3000/myapp/index.html, oauthRedirectURL is http://localhost:3000/myapp/oauthcallback.html
         oauthRedirectURL = baseURL + callbackUrl,
@@ -76,7 +76,7 @@ var force = (function () {
             console.log('params.callbackUrl',params.callbackUrl)
             callbackUrl = params.callbackUrl;
             oauthRedirectURL = baseURL + callbackUrl;
-            console.log('oauthRedirectURL',oauthRedirectURL);
+            console.log('oauthRedirectURL',oauthRedirectURL)
         }
         if (params.accessToken) {
             oauth = {access_token: params.accessToken};
