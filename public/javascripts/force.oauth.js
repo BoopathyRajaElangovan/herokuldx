@@ -13,7 +13,7 @@ var force = (function () {
         instanceUrl = null,
 
     // The Connected App client Id
-        appId,
+        appId = "3MVG9n_HvETGhr3ABKR7E1noRUVVJ33Z.NKg.62uo1eyjoSudwaJxMue6_PIgVpAkl6cBuJ3pUA==",
 
     // The force.com API version to use. Default can be overriden in login()
         apiVersion = 'v30.0',
