@@ -73,8 +73,10 @@ var force = (function () {
             instanceUrl = params.instanceUrl;
         }
         if (params.callbackUrl) {
+            console.log('params.callbackUrl',params.callbackUrl)
             callbackUrl = params.callbackUrl;
             oauthRedirectURL = baseURL + callbackUrl;
+            console.log('oauthRedirectURL',oauthRedirectURL);
         }
         if (params.accessToken) {
             oauth = {access_token: params.accessToken};

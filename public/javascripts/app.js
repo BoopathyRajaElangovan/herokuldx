@@ -28,7 +28,7 @@ function setupLightning(callback) {
 	} else {
 	    // Transform the URL for Lightning
 	    var url = oauth.instanceUrl.replace("my.salesforce", "lightning.force");
-
+        console.log('url',url);
 	    $Lightning.use(appName, 
 	        function() {
 				_lightningReady = true;
