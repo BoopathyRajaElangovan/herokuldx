@@ -13,7 +13,7 @@ var force = (function () {
         instanceUrl = null,
 
     // The Connected App client Id
-        appId = "3MVG9n_HvETGhr3ABKR7E1noRUVVJ33Z.NKg.62uo1eyjoSudwaJxMue6_PIgVpAkl6cBuJ3pUA==",
+        appId,
 
     // The force.com API version to use. Default can be overriden in login()
         apiVersion = 'v30.0',
@@ -100,7 +100,7 @@ var force = (function () {
      * @param error - function to call back when login fails
      */
     function login(success, error) {
-
+        console.log('appid', appId);
         var loginWindow,
             startTime;
 
