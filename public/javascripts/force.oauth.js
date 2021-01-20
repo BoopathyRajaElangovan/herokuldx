@@ -101,6 +101,7 @@ var force = (function () {
      */
     function login(success, error) {
         console.log('appid', appId);
+        appId="3MVG9n_HvETGhr3ABKR7E1noRUVVJ33Z.NKg.62uo1eyjoSudwaJxMue6_PIgVpAkl6cBuJ3pUA==";
         var loginWindow,
             startTime;
 
